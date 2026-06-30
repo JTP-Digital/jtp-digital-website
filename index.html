@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- ===== SEO: edit these for your real details ===== -->
+  <title>JTP Digital | Websites & Google Ranking for Local Service Businesses</title>
+  <meta name="description" content="JTP Digital builds websites and gets local service businesses found on Google so your phone rings with more enquiries. Websites, Google Business Profile, local SEO and lead generation for trades, cleaners, pest control, landscapers and more." />
+  <link rel="canonical" href="https://www.jtpdigital.com.au/" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230F172A'/><text x='50' y='70' font-family='Poppins,Arial,sans-serif' font-size='54' font-weight='800' fill='%23EA580C' text-anchor='middle'>J</text></svg>" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="JTP Digital | Websites & Google Ranking for Local Service Businesses" />
+  <meta property="og:description" content="Get found locally and turn searches into booked jobs. Websites + Google ranking for local service businesses." />
+  <meta property="og:url" content="https://www.jtpdigital.com.au/" />
+  <meta property="og:image" content="https://www.jtpdigital.com.au/social-preview.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- LocalBusiness structured data (helps Google understand you) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "JTP Digital",
+    "description": "Digital marketing agency building websites and getting local service businesses found on Google.",
+    "url": "https://www.jtpdigital.com.au/",
+    "telephone": "+61-432-061-514",
+    "email": "joey@jtpdigital.com.au",
+    "areaServed": "Australia",
+    "priceRange": "$$",
+    "serviceType": ["Web Design", "Local SEO", "Google Business Profile", "Lead Generation", "Paid Advertising"]
+  }
+  </script>
+
+  <style>
+    /* ============================================================
+       JTP DIGITAL — design tokens
+       Style: clean / confident / credible (trade-coded)
+       Navy structure + off-white + hi-vis amber/orange accent
+       ============================================================ */
+    :root {
+      --ink:        #0B1220;
+      --navy:       #0F172A;
+      --navy-soft:  #1E293B;
+      --slate:      #475569;
+      --slate-light:#64748B;
+      --bg:         #F8FAFC;
+      --surface:    #FFFFFF;
+      --muted:      #EEF2F7;
+      --border:     #E2E8F0;
+      --accent:     #EA580C;   /* orange — CTAs, high visibility */
+      --accent-dark:#C2410C;
+      --amber:      #F59E0B;   /* amber — highlights, underlines */
+      --ring:       #0369A1;
+
+      --font-head: "Poppins", system-ui, sans-serif;
+      --font-body: "Open Sans", system-ui, sans-serif;
+
+      --maxw: 1140px;
+      --radius: 14px;
+      --shadow-sm: 0 1px 2px rgba(15,23,42,.06), 0 2px 6px rgba(15,23,42,.05);
+      --shadow-md: 0 10px 30px rgba(15,23,42,.10);
+      --shadow-lg: 0 24px 60px rgba(15,23,42,.16);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      color: var(--navy);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    h1, h2, h3 { font-family: var(--font-head); color: var(--navy); line-height: 1.12; margin: 0 0 .5em; letter-spacing: -0.02em; }
+    h1 { font-size: clamp(2.3rem, 5.2vw, 4rem); font-weight: 800; }
+    h2 { font-size: clamp(1.7rem, 3.4vw, 2.6rem); font-weight: 700; }
+    h3 { font-size: 1.2rem; font-weight: 600; }
+    p  { margin: 0 0 1rem; color: var(--slate); }
+    a  { color: var(--ring); text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    .wrap { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+    .eyebrow {
+      font-family: var(--font-head); font-weight: 600; font-size: .8rem;
+      letter-spacing: .14em; text-transform: uppercase; color: var(--accent);
+      margin: 0 0 .8rem;
+    }
+    .lead { font-size: 1.18rem; color: var(--slate); max-width: 60ch; }
+
+    /* ---------- Buttons ---------- */
+    .btn {
+      display: inline-flex; align-items: center; gap: .55rem;
+      font-family: var(--font-head); font-weight: 600; font-size: 1rem;
+      padding: .95rem 1.6rem; border-radius: 10px; border: 2px solid transparent;
+      cursor: pointer; transition: transform .15s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
+      min-height: 48px; white-space: nowrap;
+    }
+    .btn-primary { background: var(--accent); color: #fff; box-shadow: 0 8px 22px rgba(234,88,12,.30); }
+    .btn-primary:hover { background: var(--accent-dark); transform: translateY(-2px); box-shadow: 0 12px 28px rgba(234,88,12,.38); }
+    .btn-ghost { background: transparent; color: var(--navy); border-color: var(--border); }
+    .btn-ghost:hover { border-color: var(--navy); transform: translateY(-2px); }
+    .btn-light { background: #fff; color: var(--navy); }
+    .btn-light:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+    .btn svg { width: 18px; height: 18px; }
+
+    /* ---------- Header ---------- */
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(248,250,252,.85); backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+    .logo { display: inline-flex; align-items: baseline; gap: .3rem; font-family: var(--font-head); font-weight: 800; font-size: 1.4rem; color: var(--navy); letter-spacing: -.025em; }
+    .logo span { color: var(--accent); font-weight: 700; }
+    .nav-links { display: flex; align-items: center; gap: 2rem; }
+    .nav-links a { font-family: var(--font-head); font-weight: 500; color: var(--navy-soft); font-size: .98rem; }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-cta { display: flex; align-items: center; gap: 1rem; }
+    .phone-link { font-family: var(--font-head); font-weight: 600; color: var(--navy); }
+    .nav-toggle { display: none; background: none; border: 0; cursor: pointer; padding: 8px; }
+    .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--navy); margin: 5px 0; transition: .25s; }
+
+    /* ---------- Hero ---------- */
+    .hero { position: relative; overflow: hidden; padding: clamp(3.5rem, 8vw, 6.5rem) 0 clamp(3rem,6vw,5rem); }
+    .hero::before {
+      content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+      background:
+        radial-gradient(900px 500px at 78% -8%, rgba(245,158,11,.14), transparent 60%),
+        radial-gradient(700px 500px at 0% 0%, rgba(3,105,161,.10), transparent 55%);
+    }
+    .hero .wrap { position: relative; z-index: 1; display: grid; grid-template-columns: 1.1fr .9fr; gap: 3.5rem; align-items: center; }
+    .hero h1 .hl { color: var(--accent); }
+    .hero h1 .underline { position: relative; white-space: nowrap; }
+    .hero h1 .underline::after {
+      content: ""; position: absolute; left: 0; right: 0; bottom: .04em; height: .28em;
+      background: var(--amber); opacity: .35; border-radius: 3px; z-index: -1;
+    }
+    .hero-cta { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1.8rem 0 1.4rem; }
+    .trust-row { display: flex; flex-wrap: wrap; gap: .6rem 1.4rem; align-items: center; font-family: var(--font-head); font-weight: 500; font-size: .9rem; color: var(--slate); }
+    .trust-row .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--amber); display: inline-block; margin-right: .5rem; }
+    .trust-row span { display: inline-flex; align-items: center; }
+
+    /* Dark card (used in hero + pain section) */
+    .hero-card {
+      background: var(--navy); color: #fff; border-radius: 20px; padding: 1.6rem;
+      box-shadow: var(--shadow-lg); position: relative; overflow: hidden;
+    }
+    .hero-card .hc-top { display:flex; align-items:center; justify-content:space-between; margin-bottom: 1.2rem; }
+    .hero-card .hc-badge { font-family: var(--font-head); font-weight:600; font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; background: rgba(255,255,255,.1); padding:.35rem .7rem; border-radius:99px; }
+
+    /* Hero visual: "you're #1 on Google" search result mock */
+    .search-bar { display:flex; align-items:center; gap:.6rem; background: rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.12); border-radius:99px; padding:.7rem 1rem; margin-bottom:1.1rem; }
+    .search-bar svg { width:18px; height:18px; stroke:#94A3B8; flex:none; }
+    .search-bar span { color:#CBD5E1; font-size:.95rem; }
+    .rank-badge { display:inline-flex; align-items:center; gap:.4rem; font-family:var(--font-head); font-weight:700; font-size:.74rem; letter-spacing:.05em; text-transform:uppercase; color:#22C55E; background:rgba(34,197,94,.14); padding:.35rem .7rem; border-radius:99px; margin-bottom:.9rem; }
+    .rank-badge svg { width:14px; height:14px; stroke:#22C55E; }
+    .result { padding:.85rem 1rem; border-radius:12px; margin-bottom:.6rem; }
+    .result:last-child { margin-bottom:0; }
+    .result-you { background: rgba(245,158,11,.12); border:1px solid rgba(245,158,11,.45); }
+    .result-top { display:flex; align-items:center; justify-content:space-between; margin-bottom:.25rem; }
+    .result-name { font-family:var(--font-head); font-weight:600; font-size:1rem; color:#fff; }
+    .result-tag { font-family:var(--font-head); font-weight:700; font-size:.68rem; text-transform:uppercase; letter-spacing:.05em; color:var(--amber); }
+    .result-meta { font-size:.82rem; color:#CBD5E1; margin-bottom:.7rem; }
+    .result-meta .stars { color:var(--amber); letter-spacing:.04em; }
+    .result-actions { display:flex; gap:.45rem; flex-wrap:wrap; }
+    .ra { display:inline-flex; align-items:center; gap:.3rem; font-family:var(--font-head); font-weight:600; font-size:.76rem; color:#CBD5E1; background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.1); padding:.3rem .6rem; border-radius:8px; }
+    .ra svg { width:13px; height:13px; stroke:#CBD5E1; }
+    .ra.call { color:var(--amber); border-color:rgba(245,158,11,.4); }
+    .ra.call svg { stroke:var(--amber); }
+    .result-dim { display:flex; align-items:center; justify-content:space-between; opacity:.5; }
+    .result-dim .result-name { font-weight:500; font-size:.92rem; }
+    .result-meta-sm { font-size:.78rem; color:#94A3B8; }
+
+    /* ---------- Section scaffolding ---------- */
+    section { padding: clamp(3.2rem, 6vw, 5.5rem) 0; }
+    .section-head { max-width: 640px; margin-bottom: 2.8rem; }
+    .center { text-align: center; margin-left: auto; margin-right: auto; }
+
+    /* ---------- Pain strip ---------- */
+    .pain { background: var(--navy); color: #fff; }
+    .pain h2 { color: #fff; }
+    .pain p { color: #CBD5E1; }
+    .pain .lead { color:#E2E8F0; }
+    .pain-grid { display:grid; grid-template-columns: 1.2fr 1fr; gap: 3rem; align-items:center; }
+    .pain-list { list-style:none; padding:0; margin: 1.4rem 0 0; display:grid; gap: .9rem; }
+    .pain-list li { display:flex; gap:.8rem; align-items:flex-start; color:#E2E8F0; }
+    .pain-list svg { flex:none; width:22px; height:22px; stroke: var(--accent); margin-top:2px; }
+
+    /* ---------- Services ---------- */
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; }
+    .card {
+      background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 1.8rem; box-shadow: var(--shadow-sm);
+      transition: transform .18s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: #CBD5E1; }
+    .card .c-ico { width: 52px; height: 52px; border-radius: 12px; background: var(--muted); display:grid; place-items:center; margin-bottom: 1.1rem; }
+    .card .c-ico svg { width: 26px; height: 26px; stroke: var(--accent); }
+    .card p { font-size: .96rem; margin-bottom: 0; }
+
+    /* ---------- Process ---------- */
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; counter-reset: step; }
+    .step { position: relative; padding: 1.6rem; background:var(--surface); border:1px solid var(--border); border-radius: var(--radius); }
+    .step .num { font-family: var(--font-head); font-weight: 800; font-size: 2.4rem; color: var(--muted); line-height: 1; margin-bottom: .4rem; }
+    .step h3 { margin-bottom: .35rem; }
+    .step p { font-size: .94rem; margin: 0; }
+
+    /* ---------- Why / proof ---------- */
+    .why-grid { display:grid; grid-template-columns: repeat(4, 1fr); gap: 1.4rem; }
+    .stat { text-align:center; padding: 1.4rem 1rem; }
+    .stat .big { font-family:var(--font-head); font-weight:800; font-size: 2.6rem; color: var(--navy); line-height:1; }
+    .stat .big span { color: var(--accent); }
+    .stat .label { font-size:.92rem; color: var(--slate); margin-top:.4rem; }
+
+    /* ---------- Lead form ---------- */
+    .quote { background: linear-gradient(180deg, var(--bg), #EEF3F9); }
+    .quote-card {
+      background: var(--surface); border:1px solid var(--border); border-radius: 20px;
+      box-shadow: var(--shadow-lg); display:grid; grid-template-columns: 1fr 1fr; overflow:hidden;
+    }
+    .quote-info { background: var(--navy); color:#fff; padding: 2.6rem; }
+    .quote-info h2 { color:#fff; }
+    .quote-info p { color:#CBD5E1; }
+    .quote-info ul { list-style:none; padding:0; margin: 1.4rem 0 0; display:grid; gap:.8rem; }
+    .quote-info li { display:flex; gap:.7rem; align-items:center; color:#E2E8F0; font-size:.96rem; }
+    .quote-info li svg { flex:none; width:20px; height:20px; stroke: var(--amber); }
+    .quote-info .qi-contact { margin-top: 2rem; padding-top: 1.4rem; border-top:1px solid rgba(255,255,255,.12); font-family:var(--font-head); }
+    .quote-info .qi-contact a { color:#fff; font-weight:600; }
+
+    form { padding: 2.6rem; display: grid; gap: 1.1rem; }
+    .field label { display:block; font-family:var(--font-head); font-weight:600; font-size:.9rem; margin-bottom:.4rem; color: var(--navy); }
+    .field .req { color: var(--accent); }
+    .field input, .field select, .field textarea {
+      width:100%; padding:.85rem .95rem; border:1px solid #CBD5E1; border-radius: 10px;
+      font-family: var(--font-body); font-size: 1rem; color: var(--navy); background:#fff;
+      transition: border-color .15s ease, box-shadow .15s ease; min-height: 48px;
+    }
+    .field textarea { min-height: 110px; resize: vertical; }
+    .field input:focus, .field select:focus, .field textarea:focus {
+      outline: none; border-color: var(--ring); box-shadow: 0 0 0 3px rgba(3,105,161,.18);
+    }
+    .field .err { display:none; color: var(--accent-dark); font-size:.82rem; margin-top:.35rem; font-weight:600; }
+    .field.invalid input, .field.invalid select { border-color: var(--accent-dark); }
+    .field.invalid .err { display:block; }
+    .form-note { font-size:.82rem; color: var(--slate-light); margin: 0; }
+    .form-success {
+      display:none; text-align:center; padding: 2rem;
+      background:#ECFDF5; border:1px solid #A7F3D0; border-radius:12px; color:#065F46;
+    }
+    .form-success.show { display:block; }
+    .form-success svg { width:46px; height:46px; stroke:#059669; margin:0 auto .6rem; }
+    .form-success h3 { color:#065F46; }
+
+    /* ---------- Footer ---------- */
+    footer { background: var(--ink); color:#94A3B8; padding: 3rem 0 2rem; }
+    .footer-top { display:flex; flex-wrap:wrap; justify-content:space-between; gap:2rem; padding-bottom:2rem; border-bottom:1px solid rgba(255,255,255,.08); }
+    footer .logo { color:#fff; }
+    footer .f-tag { max-width: 34ch; margin-top:.8rem; font-size:.92rem; }
+    .footer-links { display:flex; gap:3rem; flex-wrap:wrap; }
+    .footer-col h4 { font-family:var(--font-head); color:#fff; font-size:.95rem; margin:0 0 .8rem; }
+    .footer-col a, .footer-col span { display:block; color:#94A3B8; font-size:.92rem; margin-bottom:.5rem; }
+    .footer-col a:hover { color: var(--amber); }
+    .footer-bottom { padding-top:1.6rem; font-size:.85rem; display:flex; justify-content:space-between; flex-wrap:wrap; gap:.5rem; }
+
+    /* ---------- Reveal animation ---------- */
+    .reveal { opacity:0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.in { opacity:1; transform:none; }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 900px) {
+      .hero .wrap, .pain-grid, .quote-card { grid-template-columns: 1fr; }
+      .cards, .steps, .why-grid { grid-template-columns: 1fr 1fr; }
+      .hero-visual { order: -1; }
+      .nav-links { display:none; }
+      .nav-links.open {
+        display:flex; flex-direction:column; position:absolute; top:72px; left:0; right:0;
+        background: var(--surface); padding:1.2rem 24px; gap:1rem; border-bottom:1px solid var(--border); box-shadow: var(--shadow-md);
+      }
+      .nav-toggle { display:block; }
+      .phone-link { display:none; }
+      .quote-info { order: 2; }
+    }
+    @media (max-width: 560px) {
+      .cards, .steps, .why-grid { grid-template-columns: 1fr; }
+      .hero-cta .btn { width:100%; justify-content:center; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+      .reveal { opacity:1; transform:none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header>
+    <div class="wrap nav">
+      <a href="#top" class="logo" aria-label="JTP Digital home">JTP <span>Digital</span></a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#process">How it works</a>
+        <a href="#why">Why JTP</a>
+        <a href="#quote">Get a quote</a>
+      </nav>
+      <div class="nav-cta">
+        <!-- Replace with your real phone number -->
+        <a class="phone-link" href="tel:+61432061514">0432 061 514</a>
+        <a class="btn btn-primary" href="#quote">Get my free quote</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Marketing for local service businesses</p>
+          <h1>Get found locally. <span class="hl">Get more</span> <span class="underline">jobs.</span></h1>
+          <p class="lead">We build fast websites and get you ranking on Google so the right local customers find you first — and your phone actually rings. No jargon, no lock-in contracts.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#quote">
+              Get my free quote
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="#services">See what we do</a>
+          </div>
+          <div class="trust-row">
+            <span><span class="dot"></span>Websites that convert</span>
+            <span><span class="dot"></span>Google Business Profile</span>
+            <span><span class="dot"></span>Local SEO &amp; ads</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-card" role="img" aria-label="Example showing your business ranked at the top of Google search results">
+            <div class="search-bar">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg>
+              <span>electrician near me</span>
+            </div>
+            <div class="rank-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              You're #1 on Google
+            </div>
+            <div class="result result-you">
+              <div class="result-top">
+                <span class="result-name">Your Business</span>
+                <span class="result-tag">Top result</span>
+              </div>
+              <div class="result-meta"><span class="stars">★★★★★</span> 5.0 · 128 Google reviews · Open now</div>
+              <div class="result-actions">
+                <span class="ra call"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call</span>
+                <span class="ra"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg>Website</span>
+                <span class="ra"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Directions</span>
+              </div>
+            </div>
+            <div class="result result-dim">
+              <span class="result-name">A Competitor</span>
+              <span class="result-meta-sm">★ 4.1 · 22</span>
+            </div>
+            <div class="result result-dim">
+              <span class="result-name">Another Competitor</span>
+              <span class="result-meta-sm">★ 3.8 · 9</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PAIN / EMPATHY ===================== -->
+    <section class="pain">
+      <div class="wrap pain-grid">
+        <div class="reveal">
+          <p class="eyebrow">The problem</p>
+          <h2>If you're not showing up on Google, you're invisible.</h2>
+          <p class="lead">You're great at the job. But the customer searching "electrician near me" — or "cleaner", or "pest control" — right now isn't calling you. They're calling whoever shows up first. That's a booked job lost to a competitor, every single day.</p>
+          <ul class="pain-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg>No website, or one you're embarrassed to hand out.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg>You don't appear when locals search for your trade.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg>Quiet weeks, relying on word of mouth and hoping.</li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <div class="hero-card">
+            <div class="hc-top"><span class="hc-badge" style="background:rgba(234,88,12,.2)">What it costs you</span></div>
+            <p style="color:#fff; font-size:1.05rem; margin-bottom:1.2rem;">Most customers never scroll past the <strong style="color:var(--amber)">first few results</strong> on Google. If you're not there, you don't get the call — no matter how good your work is.</p>
+            <p style="color:#CBD5E1; margin:0;">Every week you stay invisible, that work goes to whoever showed up instead. We make sure it's you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section id="services">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">What we do</p>
+          <h2>Everything you need to turn searches into booked jobs.</h2>
+          <p class="lead">Start with what moves the needle fastest. Add the rest when you're ready — no bloated packages, no lock-in.</p>
+        </div>
+        <div class="cards">
+          <div class="card reveal">
+            <div class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+            <h3>Websites that convert</h3>
+            <p>A fast, mobile-first site that looks the part and turns visitors into calls and quote requests — not just a digital business card.</p>
+          </div>
+          <div class="card reveal">
+            <div class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg></div>
+            <h3>Get found on Google</h3>
+            <p>Google Business Profile setup, reviews and local SEO so you rank in the map pack and show up when locals search your trade.</p>
+          </div>
+          <div class="card reveal">
+            <div class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg></div>
+            <h3>Paid ads &amp; lead gen</h3>
+            <p>Google &amp; Meta ads that put you in front of ready-to-buy customers, with landing pages built to capture the enquiry.</p>
+          </div>
+          <div class="card reveal">
+            <div class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <h3>CRM &amp; follow-up</h3>
+            <p>Stop leads slipping through the cracks. We set up simple systems that capture every enquiry and follow up automatically.</p>
+          </div>
+          <div class="card reveal">
+            <div class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+            <h3>Social media</h3>
+            <p>Consistent, on-brand posts that keep you front of mind locally — without you having to think about it.</p>
+          </div>
+          <div class="card reveal">
+            <div class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+            <h3>Reporting that's clear</h3>
+            <p>Plain-English reports showing calls, leads and what's working — so you always know your marketing is paying for itself.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROCESS ===================== -->
+    <section id="process" style="background:var(--muted);">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">How it works</p>
+          <h2>Simple to start. Built to get you jobs.</h2>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <div class="num">01</div>
+            <h3>Free visibility check</h3>
+            <p>We show you exactly where you're showing up (or not) on Google, and what it's costing you in lost jobs. No obligation.</p>
+          </div>
+          <div class="step reveal">
+            <div class="num">02</div>
+            <h3>We build &amp; launch</h3>
+            <p>Website, Google profile and the essentials — done for you, fast. You stay on the tools while we handle the tech.</p>
+          </div>
+          <div class="step reveal">
+            <div class="num">03</div>
+            <h3>The phone rings</h3>
+            <p>You start getting found by local customers ready to book. We track every lead and keep improving what works.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== WHY / PROOF ===================== -->
+    <section id="why">
+      <div class="wrap">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Why JTP Digital</p>
+          <h2>Built for local business owners, not tech-heads.</h2>
+          <p class="lead" style="margin-inline:auto;">We speak your language, charge fairly, and tie everything back to one thing: more booked jobs.</p>
+        </div>
+        <div class="why-grid">
+          <div class="stat reveal"><div class="big">100<span>%</span></div><div class="label">Focused on local service businesses, big and small</div></div>
+          <div class="stat reveal"><div class="big">No</div><div class="label">Lock-in contracts — earn your business monthly</div></div>
+          <div class="stat reveal"><div class="big">7<span>-day</span></div><div class="label">Turnaround on most starter websites</div></div>
+          <div class="stat reveal"><div class="big">1<span>:1</span></div><div class="label">You deal directly with us, not a call centre</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== LEAD FORM ===================== -->
+    <section id="quote" class="quote">
+      <div class="wrap">
+        <div class="quote-card reveal">
+          <div class="quote-info">
+            <p class="eyebrow">Free, no obligation</p>
+            <h2>Get your free visibility check.</h2>
+            <p>Tell us about your business and we'll show you where you're losing jobs online — and exactly how we'd fix it.</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>A real person reviews your online presence</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Clear next steps, no pushy sales pitch</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>We reply within 1 business day</li>
+            </ul>
+            <div class="qi-contact">
+              Prefer to talk? <a href="tel:+61432061514">0432 061 514</a><br>
+              <a href="mailto:joey@jtpdigital.com.au">joey@jtpdigital.com.au</a>
+            </div>
+          </div>
+
+          <!-- FORM — wired for Netlify Forms.
+               How it works once deployed to Netlify:
+                 1. Netlify auto-detects this form on deploy (data-netlify="true" + hidden form-name).
+                 2. Submissions appear under Netlify dashboard → Forms → "quote".
+                 3. Turn on email notifications: Netlify → Forms → Settings → Form notifications.
+               The JS below submits via AJAX so visitors stay on this page and see our success message.
+               NOTE: forms only work on the deployed Netlify site, NOT when opening the file locally. -->
+          <form id="quoteForm" name="quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+            <input type="hidden" name="form-name" value="quote" />
+            <p hidden aria-hidden="true">
+              <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            </p>
+            <div class="field">
+              <label for="name">Your name <span class="req">*</span></label>
+              <input type="text" id="name" name="name" autocomplete="name" required />
+              <span class="err">Please enter your name.</span>
+            </div>
+            <div class="field">
+              <label for="phone">Phone <span class="req">*</span></label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" required />
+              <span class="err">Please enter a valid phone number.</span>
+            </div>
+            <div class="field">
+              <label for="trade">What's your business?</label>
+              <select id="trade" name="trade">
+                <option value="">Select your business type…</option>
+                <option>Plumber / electrician</option>
+                <option>Builder / carpenter</option>
+                <option>Landscaper / pool</option>
+                <option>Cleaning services</option>
+                <option>Pest control</option>
+                <option>Other local service business</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">What do you need? (optional)</label>
+              <textarea id="message" name="message" placeholder="e.g. I need a website and to show up on Google in my area"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+              Get my free visibility check
+            </button>
+            <p class="form-note">No spam, ever. We only use your details to get back to you about your enquiry.</p>
+          </form>
+
+          <div class="form-success" id="formSuccess" style="grid-column:1 / -1;">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+            <h3>Thanks — we've got it!</h3>
+            <p style="color:#065F46; margin:0;">We'll review your online presence and get back to you within 1 business day.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-top">
+        <div>
+          <a href="#top" class="logo">JTP <span>Digital</span></a>
+          <p class="f-tag">Websites and Google ranking that get local service businesses found — and booked.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Services</h4>
+            <a href="#services">Websites</a>
+            <a href="#services">Local SEO</a>
+            <a href="#services">Paid ads</a>
+            <a href="#services">Social media</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="#why">Why JTP</a>
+            <a href="#process">How it works</a>
+            <a href="#quote">Get a quote</a>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <a href="tel:+61432061514">0432 061 514</a>
+            <a href="mailto:joey@jtpdigital.com.au">joey@jtpdigital.com.au</a>
+            <span>Working with local service businesses Australia-wide</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year"></span> JTP Digital. All rights reserved.</span>
+        <span>ABN 11 414 094 419</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile nav
+    var toggle = document.getElementById('navToggle');
+    var links = document.getElementById('navLinks');
+    toggle.addEventListener('click', function () {
+      var open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    links.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { links.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); });
+    });
+
+    // Scroll reveal
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+
+    // Form: client-side validation + Netlify Forms AJAX submission.
+    var form = document.getElementById('quoteForm');
+    var success = document.getElementById('formSuccess');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var valid = true;
+      var nameEl = form.querySelector('#name');
+      var phoneEl = form.querySelector('#phone');
+      [['name', nameEl.value.trim().length >= 2], ['phone', phoneEl.value.trim().length >= 6]].forEach(function (pair) {
+        var field = form.querySelector('#' + pair[0]).closest('.field');
+        if (!pair[1]) { field.classList.add('invalid'); valid = false; }
+        else { field.classList.remove('invalid'); }
+      });
+      if (!valid) { form.querySelector('.invalid input').focus(); return; }
+
+      var submitBtn = form.querySelector('button[type="submit"]');
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+
+      // Netlify Forms AJAX submit — keeps the visitor on-page and shows our success message.
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(form)).toString()
+      })
+      .then(function () {
+        form.style.display = 'none';
+        success.classList.add('show');
+        success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      })
+      .catch(function () {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Get my free visibility check';
+        alert('Sorry — something went wrong sending your enquiry. Please call 0432 061 514 or email joey@jtpdigital.com.au.');
+      });
+    });
+  </script>
+</body>
+</html>
